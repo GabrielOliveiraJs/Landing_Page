@@ -47,11 +47,15 @@ select {
     font: inherit;
 }
 
-/* Estilização da barra de navegação */
+/*Header*/
+.header {
+    background-color: #161B22;
+}
+
+/* Barra de navegação */
 
 .navbar {
     align-items: center;
-    background-color: #161B22;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -59,8 +63,8 @@ select {
 }
 
 .navbar-logo-div {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -71,6 +75,20 @@ select {
     object-fit: cover;
 }
 
+.navbar-list {
+    display: flex;
+    padding: 0.5rem;
+}
+
 .navbar-links {
     color: #E6EDF3;
+    padding: 0.2rem;
+    margin: 0 0.2rem;
+    transition: 0.2s ease;
+    text-transform: uppercase;
+}
+
+.navbar-links:hover {
+    cursor: pointer;
+    color: #58A6FF;
 }
