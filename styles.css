@@ -8,6 +8,8 @@ Texto principal	Cinza claro	#E6EDF3
 Texto secundário	Cinza médio	#8B949E
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 /* Reset CSS */
 
 * {
@@ -23,6 +25,7 @@ html {
 body {
     min-height: 100vh;
     line-height: 1.5;
+    font-family: "Outfit", sans-serif;
 }
 
 img {
