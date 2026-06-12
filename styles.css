@@ -134,10 +134,23 @@ select {
     max-width: 600px;
     border-left: 2px solid var(--accent-color);
     padding-left: 1rem;
+    margin-bottom: 2rem;
 }
 
 .about-me-description em {
     color: var(--accent-color);
+}
+
+/*Foto de perfil*/
+.profile-image-div {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-image {
+    width: 100%;
 }
 
 /*---Responsividade---*/
@@ -153,6 +166,10 @@ select {
 
 /*Celulares*/
 @media screen and (max-width: 767px) {
+    .navbar {
+        border: none;
+    }
+
     .navbar-logo-div {
         display: none;
     }
@@ -174,5 +191,10 @@ select {
 
     .about-me-description {
         font-size: 1rem;
+    }
+
+    .profile-image-div {
+        width: 15rem;
+        height: 15rem;
     }
 }
