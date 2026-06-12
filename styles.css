@@ -164,6 +164,15 @@ select {
 
     .navbar-links {
         margin-bottom: 0.5rem;
+        font-size: 1rem;
         border-bottom: 1px solid var(--main-text-color);
+    }
+
+    .about-me-title {
+        font-size: 2rem;
+    }
+
+    .about-me-description {
+        font-size: 1rem;
     }
 }
