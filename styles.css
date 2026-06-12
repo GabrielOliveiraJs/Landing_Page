@@ -8,7 +8,18 @@ Texto principal	Cinza claro	#E6EDF3
 Texto secundário	Cinza médio	#8B949E
 */
 
+/*Importações*/
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/*Variáveis*/
+:root {
+    --main-background-color: #0D1117;
+    --secondary-background-color: #161B22;
+    --cards-sections-color: #21262D;
+    --accent-color: #58A6FF;
+    --main-text-color: #E6EDF3;
+    --secondary-text-color: #8B949E;
+}
 
 /* Reset CSS */
 
@@ -26,6 +37,7 @@ body {
     min-height: 100vh;
     line-height: 1.5;
     font-family: "Outfit", sans-serif;
+    background-color: var(--secondary-background-color);
 }
 
 img {
@@ -52,7 +64,7 @@ select {
 
 /*Header*/
 .header {
-    background-color: #161B22;
+    padding: 0.8rem 1.5rem;
 }
 
 /* Barra de navegação */
@@ -62,12 +74,14 @@ select {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 0.5rem 1.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid var(--secondary-text-color);
+    margin-bottom: 5rem;
 }
 
 .navbar-logo-div {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -84,14 +98,72 @@ select {
 }
 
 .navbar-links {
-    color: #E6EDF3;
+    color: var(--main-text-color);
     padding: 0.2rem;
     margin: 0 0.2rem;
     transition: 0.2s ease;
     text-transform: uppercase;
+    font-size: 1.2rem;
+
 }
 
 .navbar-links:hover {
     cursor: pointer;
-    color: #58A6FF;
+    color: var(--accent-color);
+}
+
+/*Título - Nome*/
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me-title {
+    color: var(--main-text-color);
+    width: 100%;
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+}
+
+.about-me-description {
+    color: var(--main-text-color);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 600px;
+    border-left: 2px solid var(--accent-color);
+    padding-left: 1rem;
+}
+
+.about-me-description em {
+    color: var(--accent-color);
+}
+
+/*---Responsividade---*/
+
+
+/*Tablets*/
+@media screen and (max-width: 1023px) {
+    .navbar-links:active {
+        color: var(--accent-color);
+    }
+}
+
+
+/*Celulares*/
+@media screen and (max-width: 767px) {
+    .navbar-logo-div {
+        display: none;
+    }
+
+    .navbar-list {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links {
+        margin-bottom: 0.5rem;
+        border-bottom: 1px solid var(--main-text-color);
+    }
 }
