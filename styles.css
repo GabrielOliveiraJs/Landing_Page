@@ -19,6 +19,7 @@ Texto secundário	Cinza médio	#8B949E
     --accent-color: #58A6FF;
     --main-text-color: #E6EDF3;
     --secondary-text-color: #8B949E;
+    --tamanho-principal-texto: 2em;
 }
 
 /* Reset CSS */
@@ -146,12 +147,11 @@ select {
 }
 
 /*Sobre mim*/
-.about-me {
+.about-me-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    border: 1px solid #fff; /*teste*/
     margin: 2rem 0;
 }
 
@@ -170,13 +170,12 @@ select {
 }
 
 /*Minhas habilidades*/
-.skills {
+.skills-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 2rem 0;
     padding: 1rem;
-    border: 1px solid #fff; /*teste*/
 }
 
 .skills-title {
@@ -191,6 +190,31 @@ select {
     font-size: 1.2em;
 }
 
+.skill-cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.skill {
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: var(--secondary-text-color);
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+.skill i {
+    font-size: 5em;
+}
+
+.skill p {}
 
 /*---Responsividade---*/
 
