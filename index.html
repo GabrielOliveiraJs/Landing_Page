@@ -41,7 +41,7 @@
             <a href="#skills">Habilidades</a>
           </li>
           <li class="navbar-links">
-            <a href="#">Projetos</a>
+            <a href="#projects">Projetos</a>
           </li>
           <li class="navbar-links">
             <a href="#">Contato</a>
@@ -73,7 +73,6 @@
           utilizo para transformar ideias em aplicações web modernas, acessíveis
           e com boa experiência para o usuário.
         </p>
-        <!-- HTML - CSS - JavaScript - TypeScript - React - Python - PHP - SQL - Node -->
         <div class="skill-cards">
           <div class="skill">
             <i class="fa-brands fa-html5 skill-icon"></i>
@@ -149,10 +148,57 @@
           </div>
         </div>
       </section>
-      <section>
-        <!---Projetos--->
-        <article><!---Projeto 1---></article>
-        <article><!---Projeto 2---></article>
+      <section class="projects-section" id="projects">
+        <h2 class="projects-title">Alguns dos Meus Projetos</h2>
+        <div class="projects-container">
+          <article class="project">
+            <img
+              class="project-img"
+              src="images/projects/catálogo_virtual_loja.png"
+              alt="Preview do projeto Catálogo Virtual para Lojas"
+            />
+            <div class="project-description-container">
+              <h3 class="project-title">Catálogo Virtual para Lojas</h3>
+              <p class="project-description">
+                Contendo: persistência de dados, área de busca, busca por
+                categoria, paginação, páginas com detalhes de cada produto,
+                login para gerenciar o conteúdo (adicionar, editar e remover)
+              </p>
+              <p>Tecnologias utilizadas:</p>
+              <ul class="project-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>SQL</li>
+              </ul>
+              <a class="project-link" href="#">Ver Projeto</a>
+            </div>
+          </article>
+          <article class="project">
+            <img
+              class="project-img"
+              src="images/projects/lista_de_compras.png"
+              alt="Preview do projeto Lista de Compras"
+            />
+            <div class="project-description-container">
+              <h3 class="project-title">Lista de Compras</h3>
+              <p class="project-description">
+                Lista de compras simples com adição de produtos, quantidade,
+                exclusão de produtos, alteração do tema da página
+              </p>
+              <p>Tecnologias utilizadas:</p>
+              <ul class="project-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <a class="project-link" href="#">Ver Projeto</a>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
 
@@ -167,14 +213,4 @@
       <!---Direitos autorais--->
     </footer>
   </body>
-
-  <script>
-    let numero = 10;
-    console.log("O valor do número é: " + numero);
-
-    let num1 = 0; // Int
-    let num2 = 1.2; // Float
-    let isTrue = true; // boolean
-    let text = "texto"; //
-  </script>
 </html>

@@ -8,7 +8,7 @@ Atividade: Você vai criar uma Landing Page, como se fosse uma pequena apresenta
  - Menu de navegação (<nav>) com links que levam para as seções da própria página
 Corpo principal (<main>) com: **************OK
  - Seção "Sobre mim" (<section>) — fale um pouco sobre você **************OK
- - Seção "Habilidades" (<section>) — liste seus conhecimentos 
+ - Seção "Habilidades" (<section>) — liste seus conhecimentos **************OK
  - Seção "Projetos" (<section>) — mostre 2 projetos (pode ser fictício), usando <article> 
  - Informações extras (<aside>) com curiosidades, hobbies ou links úteis (GitHub, Instagram, 
  LinkedIn) 
