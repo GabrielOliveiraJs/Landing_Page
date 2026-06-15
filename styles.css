@@ -185,9 +185,10 @@ select {
 }
 
 .skills-intro {
-    max-width: 600px;
+    max-width: 660px;
     color: var(--main-text-color);
     font-size: 1.2em;
+    margin-bottom: 1.5rem;
 }
 
 .skill-cards {
@@ -199,22 +200,73 @@ select {
 
 .skill {
     width: 200px;
-    height: 250px;
+    height: 260px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     text-align: center;
     padding: 0.5rem;
-    background-color: var(--secondary-text-color);
+    /* background-color: var(--main-text-color); */
+    background-color: var(--cards-sections-color);
     border-radius: 10px;
-    border: 1px solid #fff;
+    border: 1px solid var(--accent-color); 
+    transition: 0.4s ease all; 
 }
 
-.skill i {
+.skill:hover {
+    box-shadow: 0px 0px 5px 2px rgba(88, 166, 255, 0.8);
+    transform: scale(1.02);
+}
+
+.skill-icon {
     font-size: 5em;
 }
 
-.skill p {}
+.fa-html5 {
+    color: #E34F26;
+}
+
+.fa-css {
+    color: #1572B6;
+}
+
+.fa-square-js {
+    color: #F7DF1E;
+}
+
+.fa-typescript {
+    color: #3178C6;
+}
+
+.fa-react {
+    color: #61DAFB;
+}
+
+.fa-python {
+    color: #3776AB;
+}
+
+.fa-php {
+    color: #777BB4;
+}
+
+.fa-database {
+    color: #4479A1;
+}
+
+.fa-node {
+    color: #339933;
+}
+
+.skill-title {
+    font-size: 1em;
+    color: var(--main-text-color);
+}
+
+.skill-cards p {
+    color: var(--main-text-color);
+}
 
 /*---Responsividade---*/
 
@@ -223,6 +275,12 @@ select {
 @media screen and (max-width: 1023px) {
     .navbar-links:active {
         color: var(--accent-color);
+    }
+
+    .skill-cards {
+        grid-template-columns: auto auto;
+        padding: 1rem;
+        gap: 2rem;
     }
 }
 
@@ -264,5 +322,23 @@ select {
     .profile-image-div {
         width: 15rem;
         height: 15rem;
+    }
+
+    .skill-cards {
+        padding: 0.5rem;
+        gap: 1rem;
+    }
+
+    .skill {
+        width: 180px;
+        height: 230px;
+    }
+
+    .skill p {
+        font-size: 0.8em;
+    }
+
+    .skill-icon {
+        font-size: 4em;
     }
 }
