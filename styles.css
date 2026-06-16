@@ -356,19 +356,29 @@ select {
     align-items: stretch;
     gap: 1rem;
     padding: 0 1rem;
+    margin-top: 5rem;
     color: var(--main-text-color);
 }
 
 .extra-content-container {
     flex: 1 1 calc(33.333% - 1rem);
+    padding: 0.5rem;
 }
 
-/*Sessão "Curiosidades"*/
+/*Sessão "Curiosidades Hobbies e Contato"*/
+.curiosities,
+.hobbies,
+.contact {
+    border-left: 1px solid var(--secondary-text-color);
+    border-bottom: 1px solid var(--secondary-text-color);
+}
+
 .curiosities-title,
 .hobbies-title,
 .contact-title {
     color: var(--accent-color);
     margin-bottom: 1rem;
+    font-size: 1.5em;
 }
 
 .curiosities-item,
@@ -384,10 +394,34 @@ select {
 
 .contact-item {
     font-size: 1.2em;
+    transition: 0.2s ease all;
+    width: fit-content;
 }
 
 .contact-item:hover {
     color: var(--accent-color);
+}
+
+/*Rodapé*/
+.footer {
+    margin: 5rem 1rem 0 1rem;
+    color: var(--main-text-color);
+    padding-left: 4rem;
+    line-height: 3;
+    border-top: 2px solid var(--secondary-text-color);
+    background-color: var(--cards-sections-color);
+}
+
+.footer .text {
+    font-size: 1.2em;
+}
+
+.footer .text:first-child {
+    font-weight: bold;
+}
+
+.footer .text:last-child {
+    color: var(--secondary-text-color);
 }
 
 /*---Responsividade---*/
@@ -478,6 +512,11 @@ select {
     .extra-content-container,
     .extra-content-container:last-child {
         flex: 1 1 100%;
+    }
+
+    .footer {
+        padding: 0;
+        /* text-align: center; */
     }
 }
 
