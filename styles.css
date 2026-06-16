@@ -502,6 +502,11 @@ select {
         font-size: 4em;
     }
 
+    /*Meus Projetos*/
+    .project-description-container {
+        height: 60%;
+    }
+
     /*Conteúdo Extra*/
     .extra-content-container,
     .extra-content-container:last-child {
