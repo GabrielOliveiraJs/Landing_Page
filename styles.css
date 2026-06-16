@@ -1,20 +1,9 @@
-/*
-Paleta de cores:
-Background principal	Preto grafite	#0D1117
-Background secundário	Cinza escuro	#161B22
-Cards/Seções	Cinza azulado	#21262D
-Cor de destaque	Azul GitHub	#58A6FF
-Texto principal	Cinza claro	#E6EDF3
-Texto secundário	Cinza médio	#8B949E
-*/
-
 /*Importações*/
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 /*Variáveis*/
 :root {
-    --main-background-color: #0D1117;
-    --secondary-background-color: #161B22;
+    --background-color: #161B22;
     --cards-sections-color: #21262D;
     --accent-color: #58A6FF;
     --main-text-color: #E6EDF3;
@@ -22,7 +11,6 @@ Texto secundário	Cinza médio	#8B949E
 }
 
 /* Reset CSS */
-
 * {
     margin: 0;
     padding: 0;
@@ -37,7 +25,7 @@ body {
     min-height: 100vh;
     line-height: 1.5;
     font-family: "Outfit", sans-serif;
-    background-color: var(--secondary-background-color);
+    background-color: var(--background-color);
 }
 
 img {
@@ -74,7 +62,7 @@ select {
     align-items: center;
 }
 
-.name {
+.name-and-phrase .name {
     color: var(--main-text-color);
     width: 100%;
     text-align: center;
@@ -82,7 +70,7 @@ select {
     margin-bottom: 1.5rem;
 }
 
-.phrase {
+.name-and-phrase .phrase {
     font-size: 1.2em;
     color: var(--main-text-color);
     margin-bottom: 1.5rem;
@@ -100,7 +88,6 @@ select {
 }
 
 /* Barra de Navegação */
-
 .navbar {
     align-items: center;
     display: flex;
@@ -358,6 +345,7 @@ select {
     padding: 0 1rem;
     margin-top: 5rem;
     color: var(--main-text-color);
+    font-size: 1.1em;
 }
 
 .extra-content-container {
@@ -365,12 +353,13 @@ select {
     padding: 0.5rem;
 }
 
-/*Sessão "Curiosidades Hobbies e Contato"*/
+/*Sessão "Curiosidades, Hobbies e Contato"*/
 .curiosities,
 .hobbies,
 .contact {
     border-left: 1px solid var(--secondary-text-color);
     border-bottom: 1px solid var(--secondary-text-color);
+    border-bottom-left-radius: 10px;
 }
 
 .curiosities-title,
@@ -409,7 +398,7 @@ select {
     padding-left: 4rem;
     line-height: 3;
     border-top: 2px solid var(--secondary-text-color);
-    background-color: var(--cards-sections-color);
+    /* background-color: var(--cards-sections-color); */
 }
 
 .footer .text {
@@ -428,16 +417,20 @@ select {
 
 /*Tablets*/
 @media screen and (max-width: 1023px) {
+
+    /* Barra de Navegação */
     .navbar-links:active {
         color: var(--accent-color);
     }
 
+    /*Minhas Habilidades*/
     .skill-cards {
         grid-template-columns: auto auto;
         padding: 1rem;
         gap: 2rem;
     }
 
+    /*Conteúdo Extra*/
     .extra-content-container {
         flex: 1 1 calc(50% - 1rem);
     }
@@ -447,17 +440,24 @@ select {
     }
 }
 
-
 /*Celulares*/
 @media screen and (max-width: 767px) {
-    .name {
+
+    /*Nome, Frase e Foto*/
+    .name-and-phrase .name {
         font-size: 2em;
     }
 
-    .phrase {
+    .name-and-phrase .phrase {
         font-size: 1em;
     }
 
+    .profile-image-div {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    /* Barra de Navegação */
     .navbar {
         border: none;
         margin: 2rem 0;
@@ -478,15 +478,12 @@ select {
         border-bottom: 1px solid var(--main-text-color);
     }
 
+    /*Sobre Mim*/
     .about-me-description {
         font-size: 1em;
     }
 
-    .profile-image-div {
-        width: 15rem;
-        height: 15rem;
-    }
-
+    /*Minhas Habilidades*/
     .skill-cards {
         padding: 0.5rem;
         gap: 1rem;
@@ -505,22 +502,26 @@ select {
         font-size: 4em;
     }
 
-    .curiosities {
-        text-align: center;
-    }
-
+    /*Conteúdo Extra*/
     .extra-content-container,
     .extra-content-container:last-child {
         flex: 1 1 100%;
     }
 
+    /*Sessão "Curiosidades, Hobbies e Contato"*/
+    .curiosities {
+        text-align: center;
+    }
+
+    /*Rodapé*/
     .footer {
         padding-left: 0.5rem;
-        /* text-align: center; */
     }
 }
 
 @media screen and (max-width: 400px) {
+
+    /*Minhas Habilidades*/
     .skill-cards {
         padding: 0.5rem;
         gap: 1rem;
