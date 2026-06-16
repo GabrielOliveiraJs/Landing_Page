@@ -67,7 +67,7 @@ select {
     padding: 0.8rem 1.5rem;
 }
 
-/*Nome, frase e foto*/
+/*Nome, Frase e Foto*/
 .name-and-phrase {
     display: flex;
     flex-direction: column;
@@ -88,7 +88,6 @@ select {
     margin-bottom: 1.5rem;
 }
 
-/*Foto de perfil*/
 .profile-image-div {
     width: 20rem;
     height: 20rem;
@@ -100,7 +99,7 @@ select {
     width: 100%;
 }
 
-/* Barra de navegação */
+/* Barra de Navegação */
 
 .navbar {
     align-items: center;
@@ -145,7 +144,7 @@ select {
     color: var(--accent-color);
 }
 
-/*Sobre mim*/
+/*Sobre Mim*/
 .about-me-section {
     display: flex;
     flex-direction: column;
@@ -168,7 +167,7 @@ select {
     color: var(--accent-color);
 }
 
-/*Minhas habilidades*/
+/*Minhas Habilidades*/
 .skills-section {
     display: flex;
     flex-direction: column;
@@ -348,8 +347,50 @@ select {
     transform: scale(1.02);
 }
 
-/*---Responsividade---*/
+/*Conteúdo Extra*/
+.extra-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 0 1rem;
+    color: var(--main-text-color);
+}
 
+.extra-content-container {
+    flex: 1 1 calc(33.333% - 1rem);
+}
+
+/*Sessão "Curiosidades"*/
+.curiosities-title,
+.hobbies-title,
+.contact-title {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.curiosities-item,
+.hobbies-item,
+.contact-item {
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.curiosities-item em {
+    color: var(--accent-color);
+}
+
+.contact-item {
+    font-size: 1.2em;
+}
+
+.contact-item:hover {
+    color: var(--accent-color);
+}
+
+/*---Responsividade---*/
 
 /*Tablets*/
 @media screen and (max-width: 1023px) {
@@ -361,6 +402,14 @@ select {
         grid-template-columns: auto auto;
         padding: 1rem;
         gap: 2rem;
+    }
+
+    .extra-content-container {
+        flex: 1 1 calc(50% - 1rem);
+    }
+
+    .extra-content-container:last-child {
+        flex: 1 1 100%;
     }
 }
 
@@ -420,6 +469,15 @@ select {
 
     .skill-icon {
         font-size: 4em;
+    }
+
+    .curiosities {
+        text-align: center;
+    }
+
+    .extra-content-container,
+    .extra-content-container:last-child {
+        flex: 1 1 100%;
     }
 }
 
